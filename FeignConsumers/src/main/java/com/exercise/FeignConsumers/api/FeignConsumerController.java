@@ -14,12 +14,12 @@ public class FeignConsumerController {
 	@Autowired
 	HelloSao helloSao;
 	
-	@RequestMapping(value="/feign-consumer",method=RequestMethod.GET)
+	@RequestMapping(value="/sao/hello",method=RequestMethod.GET)
 	public String helloConsumer() {
 		return helloSao.hello();
 	}
 	
-	@RequestMapping(value="/feign-consumer2",method=RequestMethod.GET)
+	@RequestMapping(value="/test",method=RequestMethod.GET)
 	public String helloConsumer2() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(helloSao.hello()).append('\n');

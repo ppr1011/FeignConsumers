@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.exercise.FeignConsumers.dto.User;
 
-@FeignClient("hello-service")
+@FeignClient(name="hello-service")
 public interface HelloSao {
 
 	
